@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Mail, Github, Linkedin, ExternalLink, Menu, X } from "lucide-react";
+import { useState } from "react";
+import { Mail, Github, Linkedin, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useForm } from "@formspree/react";
@@ -528,7 +528,9 @@ function App() {
             >
               {state.submitting ? "Sending..." : "Send Message"}
             </button>
-              <p className="text-sm">*The form is not working as it is just a demo form.</p>
+            <p className="text-sm">
+              *The form is not working as it is just a demo form.
+            </p>
           </form>
         </div>
       </section>
